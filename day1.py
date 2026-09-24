@@ -27,3 +27,14 @@ for i in range(1, 5):
         s += i * j
 
 print(s)
+
+
+
+
+def f(x, a=[]):
+    a.append(x)
+    return a
+
+print(f(1))
+print(f(2))
+print(f(3))
