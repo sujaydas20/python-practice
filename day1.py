@@ -49,3 +49,17 @@ def f(n):
     return f(n-2) + 2
 
 print(f(6))
+
+
+
+
+a = [[1, 2, 3], [4, 5, 6]]
+
+b = [
+    x + y
+    for x in a[0]
+    for y in a[1]
+    if (x + y) % 2 == 0
+]
+
+print(b)
