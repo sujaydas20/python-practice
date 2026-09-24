@@ -63,3 +63,12 @@ b = [
 ]
 
 print(b)
+
+
+
+def f(*args):
+    if len(args) == 1:
+        return args[0]
+    return args[0] + f(*args[1:])
+
+print(f(2, 4, 6, 8))
