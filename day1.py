@@ -38,3 +38,14 @@ def f(x, a=[]):
 print(f(1))
 print(f(2))
 print(f(3))
+
+
+
+def f(n):
+    if n <= 1:
+        return 1
+    if n % 2 == 0:
+        return f(n-1) + 1
+    return f(n-2) + 2
+
+print(f(6))
