@@ -82,3 +82,12 @@ for k in d:
         d[k] *= 2
 
 print(d)
+
+
+from functools import reduce
+
+a = [1, 2, 3, 4]
+
+x = reduce(lambda p, q: p * q, a)
+
+print(x)
