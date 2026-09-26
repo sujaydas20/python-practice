@@ -109,3 +109,11 @@ def f(n):
     return f(n-1) + n
 
 print(f(5) - f(3))
+
+
+
+a = [1, 2, 3, 4, 5]
+
+b = [x*x if x % 2 == 0 else x+1 for x in a]
+
+print(b)
