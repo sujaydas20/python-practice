@@ -91,3 +91,12 @@ a = [1, 2, 3, 4]
 x = reduce(lambda p, q: p * q, a)
 
 print(x)
+
+
+s = "COMPUTER"
+
+a = s[1:7:2]
+b = s[-2:1:-2]
+
+print(a)
+print(b)
