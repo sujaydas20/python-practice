@@ -117,3 +117,15 @@ a = [1, 2, 3, 4, 5]
 b = [x*x if x % 2 == 0 else x+1 for x in a]
 
 print(b)
+
+
+
+a = [1, 2, 3]
+b = a
+
+a = [4, 5, 6]
+
+b.append(7)
+
+print(a)
+print(b)
