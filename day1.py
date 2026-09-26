@@ -72,3 +72,13 @@ def f(*args):
     return args[0] + f(*args[1:])
 
 print(f(2, 4, 6, 8))
+
+
+
+d = {"a": 1, "b": 2, "c": 3}
+
+for k in d:
+    if d[k] % 2 == 1:
+        d[k] *= 2
+
+print(d)
