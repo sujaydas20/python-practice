@@ -152,3 +152,11 @@ def outer():
     return inner()
 
 print(outer())
+
+
+
+
+def f(*args):
+    return args[1] + args[-1]
+
+print(f(2, 5, 7, 9))
