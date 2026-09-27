@@ -138,3 +138,17 @@ def f(n):
     return f(n-1) * 2 + f(n-2)
 
 print(f(4))
+
+
+
+def outer():
+    x = 5
+
+    def inner():
+        nonlocal x
+        x += 3
+        return x
+
+    return inner()
+
+print(outer())
