@@ -169,3 +169,19 @@ a = [1, 2, 2, 3, 4, 4, 5]
 b = {x % 3 for x in a}
 
 print(sorted(b))
+
+
+
+
+try:
+    a = 10
+    b = int("5")
+    print(a // b)
+except ValueError:
+    print("V")
+except ZeroDivisionError:
+    print("Z")
+else:
+    print("E")
+finally:
+    print("F")
