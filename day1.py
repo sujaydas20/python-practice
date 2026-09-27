@@ -207,3 +207,15 @@ t = ([1, 2], 3)
 t[0].append(4)
 
 print(t)
+
+
+
+
+def f(s):
+    if len(s) == 0:
+        return 0
+    if s[0] == 'A':
+        return 1 + f(s[1:])
+    return f(s[1:])
+
+print(f("DATAANALYTICS"))
