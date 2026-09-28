@@ -219,3 +219,25 @@ def f(s):
     return f(s[1:])
 
 print(f("DATAANALYTICS"))
+
+
+
+
+
+def func(tem):
+     tem==0
+
+
+
+
+class A:
+    x = 10
+
+a = A()
+b = A()
+
+a.x = 20
+
+print(a.x)
+print(b.x)
+print(A.x)
