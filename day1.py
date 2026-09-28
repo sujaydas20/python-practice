@@ -270,3 +270,17 @@ c = A()
 
 print(A.count)
 print(a.count)
+
+
+
+class A:
+    def show(self):
+        return 10
+
+class B(A):
+    def show(self):
+        return 20
+
+x = B()
+
+print(x.show())
