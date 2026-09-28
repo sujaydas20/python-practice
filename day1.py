@@ -241,3 +241,17 @@ a.x = 20
 print(a.x)
 print(b.x)
 print(A.x)
+
+
+
+
+class A:
+    def __init__(self, x):
+        self.x = x + 2
+
+    def show(self):
+        return self.x * 2
+
+a = A(5)
+
+print(a.show())
