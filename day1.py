@@ -284,3 +284,17 @@ class B(A):
 x = B()
 
 print(x.show())
+
+
+
+class A:
+    def show(self):
+        return 5
+
+class B(A):
+    def show(self):
+        return super().show() + 10
+
+x = B()
+
+print(x.show())
