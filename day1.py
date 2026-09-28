@@ -255,3 +255,18 @@ class A:
 a = A(5)
 
 print(a.show())
+
+
+
+class A:
+    count = 0
+
+    def __init__(self):
+        A.count += 1
+
+a = A()
+b = A()
+c = A()
+
+print(A.count)
+print(a.count)
