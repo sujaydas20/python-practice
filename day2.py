@@ -10,3 +10,22 @@ class B(A):
 b = B()
 
 print(b.x)
+
+
+
+
+class A:
+    def value(self):
+        return 10
+
+class B(A):
+    def value(self):
+        return 2 * super().value()
+
+class C(B):
+    def value(self):
+        return super().value() + 5
+
+c = C()
+
+print(c.value())
