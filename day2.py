@@ -47,3 +47,13 @@ d.setdefault("a", 20)
 d.setdefault("b", 30)
 
 print(d["a"] + d["b"])
+
+
+from collections import defaultdict
+
+d = defaultdict(int)
+
+for x in [1, 2, 1, 3, 2, 1]:
+    d[x] += 1
+
+print(d[1] * d[2] + d[3])
