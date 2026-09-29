@@ -38,3 +38,12 @@ s = "BANANA"
 c = Counter(s)
 
 print(c["A"] + c["N"])
+
+
+d = {}
+
+d.setdefault("a", 10)
+d.setdefault("a", 20)
+d.setdefault("b", 30)
+
+print(d["a"] + d["b"])
