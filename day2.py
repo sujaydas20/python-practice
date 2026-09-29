@@ -67,3 +67,11 @@ b = [4, 5, 6]
 c = list(map(lambda x, y: x*y + y, a, b))
 
 print(c[0] + c[2])
+
+
+
+s = "GATE2027"
+
+x = list(filter(str.isdigit, s))
+
+print(len(x))
