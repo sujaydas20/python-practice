@@ -75,3 +75,12 @@ s = "GATE2027"
 x = list(filter(str.isdigit, s))
 
 print(len(x))
+
+
+a = [1, 2, 3, 4, 5]
+
+r = reversed(a)
+
+print(next(r))
+print(next(r))
+print(next(r))
