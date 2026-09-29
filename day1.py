@@ -312,3 +312,20 @@ class B(A):
 x = B()
 
 print(x.show())
+
+
+
+
+class A:
+    x = 5
+
+    def change(self):
+        A.x += 2
+
+a = A()
+b = A()
+
+a.change()
+b.change()
+
+print(a.x, b.x, A.x)
