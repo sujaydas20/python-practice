@@ -29,3 +29,12 @@ class C(B):
 c = C()
 
 print(c.value())
+
+
+from collections import Counter
+
+s = "BANANA"
+
+c = Counter(s)
+
+print(c["A"] + c["N"])
