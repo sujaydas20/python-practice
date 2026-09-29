@@ -57,3 +57,13 @@ for x in [1, 2, 1, 3, 2, 1]:
     d[x] += 1
 
 print(d[1] * d[2] + d[3])
+
+
+
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+
+c = list(map(lambda x, y: x*y + y, a, b))
+
+print(c[0] + c[2])
