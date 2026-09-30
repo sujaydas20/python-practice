@@ -84,3 +84,15 @@ r = reversed(a)
 print(next(r))
 print(next(r))
 print(next(r))
+
+
+
+
+
+from collections import Counter
+
+a = [2, 3, 2, 4, 3, 2, 4]
+
+c = Counter(a)
+
+print(c.most_common(2)[0][0])
