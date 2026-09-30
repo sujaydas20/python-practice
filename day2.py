@@ -96,3 +96,16 @@ a = [2, 3, 2, 4, 3, 2, 4]
 c = Counter(a)
 
 print(c.most_common(2)[0][0])
+
+
+
+
+a = [4, 7, 2, 9, 6]
+
+s = 0
+
+for i, x in enumerate(a):
+    if i % 2 == 0:
+        s += x
+
+print(s)
