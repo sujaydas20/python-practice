@@ -109,3 +109,14 @@ for i, x in enumerate(a):
         s += x
 
 print(s)
+
+
+
+keys = ["a", "b", "c"]
+values = [2, 4, 6]
+
+d = dict(zip(keys, values))
+
+d["b"] += d["c"]
+
+print(d["a"] + d["b"])
