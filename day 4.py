@@ -86,3 +86,18 @@ def second():
     yield 3
 
 print(list(second()))
+
+
+
+class Number:
+    def __init__(self, x):
+        self.x = x
+
+    def __eq__(self, other):
+        return self.x % 3 == other.x % 3
+
+a = Number(7)
+b = Number(10)
+c = Number(12)
+
+print(a == b, b == c)
