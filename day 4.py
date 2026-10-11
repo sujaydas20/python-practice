@@ -55,3 +55,20 @@ s = "gate-python-exam"
 a, b, c = s.partition("-")
 
 print(a + c)
+
+
+
+
+
+class A:
+    x = 5
+
+    def update(self):
+        self.x += 2
+
+a = A()
+b = A()
+
+a.update()
+
+print(A.x, a.x, b.x)
