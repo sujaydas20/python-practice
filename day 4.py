@@ -72,3 +72,17 @@ b = A()
 a.update()
 
 print(A.x, a.x, b.x)
+
+
+
+
+def first():
+    yield 1
+    yield 2
+
+def second():
+    yield 0
+    yield from first()
+    yield 3
+
+print(list(second()))
