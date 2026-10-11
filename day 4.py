@@ -101,3 +101,17 @@ b = Number(10)
 c = Number(12)
 
 print(a == b, b == c)
+
+
+
+
+
+def calculate(x):
+    try:
+        result = 10 // x
+    except ZeroDivisionError:
+        return 100
+    else:
+        return result + 5
+
+print(calculate(2) + calculate(0))
