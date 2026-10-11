@@ -43,3 +43,15 @@ class Counter:
 
 c = Counter(3)
 print(list(c))
+
+
+
+
+
+
+
+
+s = "gate-python-exam"
+a, b, c = s.partition("-")
+
+print(a + c)
