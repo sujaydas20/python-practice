@@ -159,3 +159,10 @@ def f(n):
     return n * f(n - 2)
 
 print(f(6))
+
+
+
+
+a = [0, 2, 4, 6]
+
+print(any(a), all(a), any(x % 2 for x in a))
