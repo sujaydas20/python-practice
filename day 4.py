@@ -135,3 +135,15 @@ b[1] = 9
 c[2] = 7
 
 print(a, b, c)
+
+
+
+class Item:
+    def __str__(self):
+        return "STR"
+
+    def __repr__(self):
+        return "REPR"
+
+x = Item()
+print(str(x), repr(x))
