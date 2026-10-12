@@ -123,3 +123,15 @@ def calc(a, *, b=4):
     return a * b
 
 print(calc(3) + calc(2, b=5))
+
+
+
+
+a = [1, 2, 3]
+b = a
+c = a[:]
+
+b[1] = 9
+c[2] = 7
+
+print(a, b, c)
