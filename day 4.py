@@ -166,3 +166,16 @@ print(f(6))
 a = [0, 2, 4, 6]
 
 print(any(a), all(a), any(x % 2 for x in a))
+
+
+
+
+
+class Calc:
+    x = 10
+
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+print(Calc.add(Calc.x, 5))
