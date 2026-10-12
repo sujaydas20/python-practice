@@ -115,3 +115,11 @@ def calculate(x):
         return result + 5
 
 print(calculate(2) + calculate(0))
+
+
+
+
+def calc(a, *, b=4):
+    return a * b
+
+print(calc(3) + calc(2, b=5))
