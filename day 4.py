@@ -179,3 +179,14 @@ class Calc:
         return a + b
 
 print(Calc.add(Calc.x, 5))
+
+
+
+
+
+import math
+
+a = math.gcd(24, 36)
+b = math.lcm(4, 6)
+
+print(a + b)
