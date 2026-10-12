@@ -147,3 +147,15 @@ class Item:
 
 x = Item()
 print(str(x), repr(x))
+
+
+
+
+
+
+def f(n):
+    if n <= 1:
+        return 1
+    return n * f(n - 2)
+
+print(f(6))
