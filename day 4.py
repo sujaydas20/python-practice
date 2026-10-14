@@ -246,3 +246,15 @@ def outer():
     return inner() + inner()
 
 print(outer())
+
+
+
+
+
+
+from itertools import islice
+
+a = [10, 20, 30, 40, 50, 60]
+b = list(islice(a, 1, 5, 2))
+
+print(sum(b))
