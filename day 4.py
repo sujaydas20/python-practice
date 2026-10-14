@@ -223,3 +223,26 @@ a[2] = 10
 y = next(r)
 
 print(x + y)
+
+
+
+
+
+
+
+
+
+
+
+
+def outer():
+    x = 5
+
+    def inner():
+        nonlocal x
+        x += 3
+        return x
+
+    return inner() + inner()
+
+print(outer())
