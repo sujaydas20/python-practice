@@ -190,3 +190,10 @@ a = math.gcd(24, 36)
 b = math.lcm(4, 6)
 
 print(a + b)
+
+
+
+def calc(a, b, /, c=2):
+    return a * b + c
+
+print(calc(3, 4) + calc(2, 5, c=1))
