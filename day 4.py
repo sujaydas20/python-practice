@@ -258,3 +258,19 @@ a = [10, 20, 30, 40, 50, 60]
 b = list(islice(a, 1, 5, 2))
 
 print(sum(b))
+
+
+
+
+
+class Test:
+    def __init__(self, x):
+        self.x = x
+
+    def __bool__(self):
+        return self.x > 5
+
+a = Test(3)
+b = Test(8)
+
+print(bool(a) + bool(b))
