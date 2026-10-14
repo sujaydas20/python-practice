@@ -274,3 +274,18 @@ a = Test(3)
 b = Test(8)
 
 print(bool(a) + bool(b))
+
+
+
+
+def change(a):
+    try:
+        a.append(4)
+        return len(a)
+    finally:
+        a.append(5)
+
+x = [1, 2]
+result = change(x)
+
+print(result, x)
