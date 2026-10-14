@@ -210,3 +210,16 @@ c = ChainMap(a, b)
 c["x"] = 10
 
 print(a["x"] + b["x"] + c["z"])
+
+
+
+
+
+a = [2, 4, 6, 8]
+r = reversed(a)
+
+x = next(r)
+a[2] = 10
+y = next(r)
+
+print(x + y)
