@@ -197,3 +197,16 @@ def calc(a, b, /, c=2):
     return a * b + c
 
 print(calc(3, 4) + calc(2, 5, c=1))
+
+
+
+
+from collections import ChainMap
+
+a = {"x": 2, "y": 3}
+b = {"x": 7, "z": 5}
+
+c = ChainMap(a, b)
+c["x"] = 10
+
+print(a["x"] + b["x"] + c["z"])
